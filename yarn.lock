@@ -5,34 +5,6 @@ __metadata:
   version: 8
   cacheKey: 10c0
 
-"---@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "---@workspace:."
-  dependencies:
-    "@eslint/js": "npm:9.1.1"
-    "@jujulego/jill": "npm:2.5.2"
-    "@jujulego/vite-plugin-swc": "npm:1.2.0"
-    "@microsoft/eslint-formatter-sarif": "npm:3.1.0"
-    "@swc/cli": "npm:0.3.12"
-    "@swc/core": "npm:1.4.16"
-    "@swc/helpers": "npm:^0.5.3"
-    "@types/eslint__js": "npm:8.42.3"
-    "@types/node": "npm:18.19.31"
-    "@vitest/coverage-v8": "npm:1.5.0"
-    eslint: "npm:9.1.1"
-    eslint-plugin-vitest: "npm:0.5.3"
-    shx: "npm:0.3.4"
-    typescript: "npm:5.4.5"
-    typescript-eslint: "npm:7.7.1"
-    vite: "npm:5.2.10"
-    vite-tsconfig-paths: "npm:4.3.2"
-    vitest: "npm:1.5.0"
-  dependenciesMeta:
-    vitest@1.5.0:
-      unplugged: true
-  languageName: unknown
-  linkType: soft
-
 "@aashutoshrathi/word-wrap@npm:^1.2.3":
   version: 1.2.6
   resolution: "@aashutoshrathi/word-wrap@npm:1.2.6"
@@ -587,6 +559,34 @@ __metadata:
   checksum: 10c0/220730b4c9c4188d4e076c9fa6466f722eaaa84eb34947555aeabee6b7413e84154c821b80c6974d92ed30ebd21e6b10df7e0d5a9e65eb2685372147112189f0
   languageName: node
   linkType: hard
+
+"@kyrielle/injector@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@kyrielle/injector@workspace:."
+  dependencies:
+    "@eslint/js": "npm:9.1.1"
+    "@jujulego/jill": "npm:2.5.2"
+    "@jujulego/vite-plugin-swc": "npm:1.2.0"
+    "@microsoft/eslint-formatter-sarif": "npm:3.1.0"
+    "@swc/cli": "npm:0.3.12"
+    "@swc/core": "npm:1.4.16"
+    "@swc/helpers": "npm:^0.5.3"
+    "@types/eslint__js": "npm:8.42.3"
+    "@types/node": "npm:18.19.31"
+    "@vitest/coverage-v8": "npm:1.5.0"
+    eslint: "npm:9.1.1"
+    eslint-plugin-vitest: "npm:0.5.3"
+    shx: "npm:0.3.4"
+    typescript: "npm:5.4.5"
+    typescript-eslint: "npm:7.7.1"
+    vite: "npm:5.2.10"
+    vite-tsconfig-paths: "npm:4.3.2"
+    vitest: "npm:1.5.0"
+  dependenciesMeta:
+    vitest@1.5.0:
+      unplugged: true
+  languageName: unknown
+  linkType: soft
 
 "@microsoft/eslint-formatter-sarif@npm:3.1.0":
   version: 3.1.0
