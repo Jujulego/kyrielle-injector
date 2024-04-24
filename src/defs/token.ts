@@ -1,4 +1,4 @@
 /**
  * Symbol used as key by scopes
  */
-export type Token<T> = symbol & { __type?: T };
+export type Token<T = unknown> = symbol & { __type?: T };
