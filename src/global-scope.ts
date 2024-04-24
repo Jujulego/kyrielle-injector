@@ -1,5 +1,6 @@
 import type { RootScope, Token } from './defs/index.js';
 
+// Constants
 const GLOBAL_SCOPE_MAP = Symbol.for('kyrielle/injector:GLOBAL_SCOPE_MAP');
 
 /**
