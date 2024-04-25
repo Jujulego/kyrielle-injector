@@ -15,7 +15,7 @@ export interface RootScope {
   set<T>(token: Token<T>, obj: T): void;
 
   /**
-   * Removes all token stored in scope
+   * Removes all token stored in the current scope
    */
   clear(): void;
 }
