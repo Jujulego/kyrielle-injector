@@ -936,11 +936,11 @@ __metadata:
   linkType: hard
 
 "@swc/helpers@npm:^0.5.3, @swc/helpers@npm:^0.5.6":
-  version: 0.5.10
-  resolution: "@swc/helpers@npm:0.5.10"
+  version: 0.5.11
+  resolution: "@swc/helpers@npm:0.5.11"
   dependencies:
     tslib: "npm:^2.4.0"
-  checksum: 10c0/db7d82cf1301d01a92777795abe6846fd0a0af15bf52c37f1f2945cdafd96ebc612276820fc4c04e0b875b7109b5f4087e796afe7ddba36c1137d895144db2e2
+  checksum: 10c0/7d1987ee6b887277d373a9be8c445cd2259c3258c08b16908c06864121fd8eac8bb89b179c91b6c5395f38194a903b5772575947c7eb3ca23285152cb0f66caa
   languageName: node
   linkType: hard
 
