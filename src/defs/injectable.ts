@@ -8,7 +8,7 @@ export interface Injectable<out T = unknown> {
    * Create a new instance of objet, and store it in a scope.
    * @param scope Scope used to store instance, defaults to global scope.
    */
-  inject(scope?: Scope): T;
+  inject(scope: Scope): T;
 }
 
 /**
