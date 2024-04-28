@@ -1,6 +1,6 @@
 import { afterEach, describe, expect, it } from 'vitest';
 
-import { Token } from '@/src/defs/token.js';
+import { SymbolToken } from '@/src/defs/token.js';
 import { globalScope$ } from '@/src/global-scope.js';
 import { scope$ } from '@/src/scope.js';
 
@@ -20,7 +20,7 @@ describe('scope$', () => {
   });
 
   it('should return stored value', () => {
-    const token: Token<number> = Symbol('test-token');
+    const token: SymbolToken<number> = Symbol('test-token');
     const scope = scope$('test-scope');
 
     scope.set(token, 42);
@@ -29,7 +29,7 @@ describe('scope$', () => {
   });
 
   it('should return value stored parent scope', () => {
-    const token: Token<number> = Symbol('test-token');
+    const token: SymbolToken<number> = Symbol('test-token');
 
     const parent = scope$('parent-scope');
     const scope = scope$('test-scope', parent);
@@ -39,7 +39,7 @@ describe('scope$', () => {
   });
 
   it('should return value stored global scope', () => {
-    const token: Token<number> = Symbol('test-token');
+    const token: SymbolToken<number> = Symbol('test-token');
     const scope = scope$('test-scope');
 
     globalScope$().set(token, 42);
@@ -47,7 +47,7 @@ describe('scope$', () => {
   });
 
   it('should return undefined if cleared', () => {
-    const token: Token<number> = Symbol('test-token');
+    const token: SymbolToken<number> = Symbol('test-token');
     const scope = scope$('test-scope');
 
     scope.set(token, 42);
@@ -57,7 +57,7 @@ describe('scope$', () => {
   });
 
   it('should not clear value from parent scope', () => {
-    const token: Token<number> = Symbol('test-token');
+    const token: SymbolToken<number> = Symbol('test-token');
 
     const parent = scope$('parent-scope');
     const scope = scope$('test-scope', parent);

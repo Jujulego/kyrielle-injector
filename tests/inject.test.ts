@@ -18,4 +18,13 @@ describe('inject$', () => {
     expect(spy).toHaveBeenCalledWith(scope);
     expect(spy).toHaveBeenCalledOnce();
   });
+
+  it('should create an instance of given class', () => {
+    class Test {
+      life = 42;
+    }
+
+    expect(inject$(Test)).toBeInstanceOf(Test);
+    expect(inject$(Test)).toBe(inject$(Test));
+  });
 });
