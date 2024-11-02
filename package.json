@@ -1,6 +1,6 @@
 {
   "name": "@kyrielle/injector",
-  "version": "1.0.0-alpha.2",
+  "version": "1.0.0",
   "license": "MIT",
   "author": "Julien Capellari <julien.capellari@gmail.com>",
   "repository": {
