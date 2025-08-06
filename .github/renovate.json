@@ -3,7 +3,7 @@
     "config:recommended"
   ],
   "baseBranchPatterns": [
-    "main"
+    "latest"
   ],
   "labels": [
     "dependencies"
