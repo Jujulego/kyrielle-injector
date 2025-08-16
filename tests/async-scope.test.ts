@@ -1,7 +1,4 @@
-import { asyncScope$ } from '@/src/async-scope.js';
-import type { SymbolToken } from '@/src/defs/index.js';
-import { globalScope$ } from '@/src/global-scope.js';
-import { scope$ } from '@/src/scope.js';
+import { asyncScope$, globalScope$, scope$, type SymbolToken } from '@/src/index.js';
 import { afterEach, describe, expect, it } from 'vitest';
 
 // Setup
