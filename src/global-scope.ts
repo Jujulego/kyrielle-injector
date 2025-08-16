@@ -4,7 +4,9 @@ import type { RootScope, Token } from './defs/index.js';
 const GLOBAL_SCOPE_MAP = Symbol.for('kyrielle/injector:GLOBAL_SCOPE_MAP');
 
 /**
- * Returns a new RootScope
+ * Returns a new {@link RootScope}
+ *
+ * @version 1.0.0
  */
 export function globalScope$(): RootScope {
   const map = (globalThis as { [GLOBAL_SCOPE_MAP]?: Map<Token, unknown> })[GLOBAL_SCOPE_MAP] ??= new Map();
