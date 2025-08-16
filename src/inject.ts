@@ -3,6 +3,8 @@ import { globalScope$ } from './global-scope.js';
 
 /**
  * Creates an instance of token, using & storing in scope.
+ *
+ * @version 1.0.0
  */
 export function inject$<T>(token: Token<T>, scope: Scope = globalScope$()): T {
   let value = scope.get(token);
