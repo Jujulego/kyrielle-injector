@@ -359,6 +359,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@eslint/js@npm:9.39.3":
+  version: 9.39.3
+  resolution: "@eslint/js@npm:9.39.3"
+  checksum: 10c0/df1c70d6681c8daf4a3c86dfac159fcd98a73c4620c4fbe2be6caab1f30a34c7de0ad88ab0e81162376d2cde1a2eed1c32eff5f917ca369870930a51f8e818f1
+  languageName: node
+  linkType: hard
+
 "@eslint/object-schema@npm:^2.1.7":
   version: 2.1.7
   resolution: "@eslint/object-schema@npm:2.1.7"
@@ -523,7 +530,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@kyrielle/injector@workspace:."
   dependencies:
-    "@eslint/js": "npm:9.39.2"
+    "@eslint/js": "npm:9.39.3"
     "@jujulego/jill": "npm:3.0.7"
     "@jujulego/vite-plugin-swc": "npm:1.2.1"
     "@microsoft/eslint-formatter-sarif": "npm:3.1.0"
