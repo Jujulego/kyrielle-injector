@@ -546,7 +546,7 @@ __metadata:
     "@swc/helpers": "npm:^0.5.3"
     "@types/node": "npm:24.12.2"
     "@typescript-eslint/utils": "npm:8.58.0"
-    "@vitest/coverage-v8": "npm:3.2.4"
+    "@vitest/coverage-v8": "npm:3.2.6"
     "@vitest/eslint-plugin": "npm:1.6.19"
     eslint: "npm:9.39.4"
     globals: "npm:17.4.0"
@@ -1863,9 +1863,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vitest/coverage-v8@npm:3.2.4":
-  version: 3.2.4
-  resolution: "@vitest/coverage-v8@npm:3.2.4"
+"@vitest/coverage-v8@npm:3.2.6":
+  version: 3.2.6
+  resolution: "@vitest/coverage-v8@npm:3.2.6"
   dependencies:
     "@ampproject/remapping": "npm:^2.3.0"
     "@bcoe/v8-coverage": "npm:^1.0.2"
@@ -1881,12 +1881,12 @@ __metadata:
     test-exclude: "npm:^7.0.1"
     tinyrainbow: "npm:^2.0.0"
   peerDependencies:
-    "@vitest/browser": 3.2.4
-    vitest: 3.2.4
+    "@vitest/browser": 3.2.6
+    vitest: 3.2.6
   peerDependenciesMeta:
     "@vitest/browser":
       optional: true
-  checksum: 10c0/cae3e58d81d56e7e1cdecd7b5baab7edd0ad9dee8dec9353c52796e390e452377d3f04174d40b6986b17c73241a5e773e422931eaa8102dcba0605ff24b25193
+  checksum: 10c0/6023db27f431792fc59c59dc426d217558685815fe69f1e2ce1fe179ec4e823412383669aba0354f419f609c51135c84188ee9ec61ea48c1ce6a3d34e271d24d
   languageName: node
   linkType: hard
 
