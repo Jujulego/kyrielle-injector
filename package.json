@@ -42,7 +42,7 @@
     "@swc/core": "1.15.43",
     "@types/node": "24.13.3",
     "@typescript-eslint/utils": "8.61.0",
-    "@vitest/coverage-v8": "3.2.6",
+    "@vitest/coverage-v8": "3.2.7",
     "@vitest/eslint-plugin": "1.6.22",
     "eslint": "9.39.4",
     "globals": "17.6.0",
@@ -52,11 +52,11 @@
     "typescript-eslint": "8.61.0",
     "vite": "7.3.6",
     "vite-tsconfig-paths": "6.1.1",
-    "vitest": "3.2.6"
+    "vitest": "3.2.7"
   },
   "packageManager": "yarn@4.12.0",
   "dependenciesMeta": {
-    "vitest@3.2.6": {
+    "vitest@3.2.7": {
       "unplugged": true
     }
   }
