@@ -52,11 +52,11 @@
     "typescript-eslint": "8.63.0",
     "vite": "7.3.6",
     "vite-tsconfig-paths": "6.1.1",
-    "vitest": "3.2.7"
+    "vitest": "4.1.11"
   },
   "packageManager": "yarn@4.12.0",
   "dependenciesMeta": {
-    "vitest@3.2.7": {
+    "vitest@4.1.11": {
       "unplugged": true
     }
   }
