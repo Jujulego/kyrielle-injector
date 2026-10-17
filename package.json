@@ -3,13 +3,13 @@
   "version": "1.1.0",
   "license": "MIT",
   "author": "Julien Capellari <julien.capellari@gmail.com>",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/jujulego/kyrielle-injector"
-  },
-  "publishConfig": {
-    "access": "public"
-  },
+  "repository": "github:Jujulego/kyrielle-injector",
+  "description": "Lightweight dependency injection tools",
+  "keywords": [
+    "kyrielle",
+    "dependency injection",
+    "di"
+  ],
   "sideEffects": false,
   "files": [
     "./dist"
