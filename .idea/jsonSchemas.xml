@@ -51,6 +51,22 @@
             </SchemaInfo>
           </value>
         </entry>
+        <entry key="swcrc">
+          <value>
+            <SchemaInfo>
+              <option name="name" value="swcrc" />
+              <option name="relativePathToSchema" value="https://swc.rs/schema.json" />
+              <option name="applicationDefined" value="true" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="path" value=".swcrc" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
       </map>
     </state>
   </component>
