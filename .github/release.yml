@@ -8,10 +8,10 @@ changelog:
       labels:
         - bug
 
-    - title: ":package: Dependencies"
-      labels:
-        - dependencies
-
     - title: ":space_invader: Other"
       labels:
         - "*"
+
+    - title: ":package: Dependencies"
+      labels:
+        - dependencies
