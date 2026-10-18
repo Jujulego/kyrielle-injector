@@ -1,7 +1,7 @@
-import { type Scope, type SymbolToken } from './defs/index.js';
+import { type Scope, type SymbolToken } from '../defs/index.js';
 
 /**
- * Creates an injectable token, using init as instance creator.
+ * Creates an injectable token, using init as an instance creator.
  *
  * @version 1.0.0
  */

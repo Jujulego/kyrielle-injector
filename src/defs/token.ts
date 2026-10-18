@@ -1,12 +1,12 @@
 import type { Injectable } from './injectable.js';
 
 /**
- * Class based token
+ * Class-based token
  */
 export type ClassToken<out T = unknown> = new () => T;
 
 /**
- * Symbol based token
+ * Symbol-based token
  */
 export type SymbolToken<T = unknown> = symbol & Injectable<T>;
 

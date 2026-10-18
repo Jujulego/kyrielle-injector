@@ -1,8 +1,8 @@
-import type { ChildScope, Scope, Token } from './defs/index.js';
+import type { ChildScope, Scope, Token } from '../defs/index.js';
 import { globalScope$ } from './global-scope.js';
 
 /**
- * Creates a new {@link ChildScope}, with given parent defaulting to global scope
+ * Creates a new {@link ChildScope}, with a given parent defaulting to global scope
  *
  * @version 1.0.0
  */

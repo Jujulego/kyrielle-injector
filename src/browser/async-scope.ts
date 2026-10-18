@@ -1,9 +1,4 @@
-import { AsyncLocalStorage } from 'node:async_hooks';
-import type { ChildScope, RootScope, Scope } from './defs/index.js';
-import { globalScope$ } from './global-scope.js';
-import { scope$ } from './scope.js';
-
-const storage = new AsyncLocalStorage<Scope>();
+import type { ChildScope, RootScope, Scope } from '../defs/index.js';
 
 /**
  * Uses current {@link ChildScope} stored in {@link AsyncLocalStorage}. Uses {@link globalScope$} as default scope.
@@ -37,11 +32,6 @@ export function asyncScope$<D extends RootScope>(defaultScope: D): ChildScope | 
  */
 export function asyncScope$<R>(fn: () => R, scope?: Scope): R;
 
-export function asyncScope$<R>(arg1?: (() => R) | Scope, arg2?: Scope) {
-  if (typeof arg1 === 'function') {
-    const scope = arg2 ?? scope$('async');
-    return storage.run(scope, arg1);
-  } else {
-    return storage.getStore() ?? arg1 ?? globalScope$();
-  }
+export function asyncScope$(): Scope {
+  throw new Error('asyncScope$ is not yet supported in browser');
 }
