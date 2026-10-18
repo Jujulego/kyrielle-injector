@@ -1,4 +1,4 @@
-import type { Scope, Token } from './defs/index.js';
+import type { Scope, Token } from '../defs/index.js';
 import { globalScope$ } from './global-scope.js';
 
 /**
