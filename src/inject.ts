@@ -1,4 +1,4 @@
-import type { InjectionContext } from './defs/injection-context.js';
+import type { InjectionContext } from './internals/InjectionContext.js';
 import type { Scope, Token } from './defs/index.js';
 
 /** @internal */

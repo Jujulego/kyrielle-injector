@@ -1,4 +1,4 @@
-import type { Scope } from './scope.js';
+import type { Scope } from '../defs/scope.js';
 
 export interface InjectionContext {
   /**
