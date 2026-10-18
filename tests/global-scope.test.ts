@@ -1,7 +1,6 @@
-import { describe, expect, it } from 'vitest';
-
 import type { SymbolToken } from '@/src/defs/token.js';
-import { globalScope$ } from '@/src/common/global-scope.js';
+import { globalScope$ } from '@/src/global-scope.js';
+import { describe, expect, it } from 'vitest';
 
 // Tests
 describe('globalScope$', () => {
