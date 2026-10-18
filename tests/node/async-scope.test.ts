@@ -1,4 +1,7 @@
-import { asyncScope$, globalScope$, scope$, type SymbolToken } from '@/src/index.js';
+import { globalScope$ } from '@/src/common/global-scope.js';
+import { scope$ } from '@/src/common/scope.js';
+import type { SymbolToken } from '@/src/defs/index.js';
+import { asyncScope$ } from '@/src/node/async-scope.js';
 import { afterEach, describe, expect, it } from 'vitest';
 
 // Setup
@@ -7,7 +10,7 @@ afterEach(() => {
 });
 
 // Tests
-describe('asyncScope$', () => {
+describe('asyncScope$ (node)', () => {
   it('should search in the global scope by default', () => {
     const token = Symbol('test-token') as SymbolToken<number>;
     globalScope$().set(token, 42);
