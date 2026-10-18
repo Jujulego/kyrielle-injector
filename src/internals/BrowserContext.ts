@@ -1,5 +1,5 @@
 import type { Scope } from '../defs/index.js';
-import type { InjectionContext } from '../defs/injection-context.js';
+import type { InjectionContext } from './InjectionContext.js';
 import { globalScope$ } from '../global-scope.js';
 import { UnsupportedAsyncToken } from './UnsupportedAsyncToken.js';
 

@@ -1,6 +1,6 @@
 import { AsyncLocalStorage } from 'node:async_hooks';
 import { globalScope$ } from '../global-scope.js';
-import type { InjectionContext } from '../defs/injection-context.js';
+import type { InjectionContext } from './InjectionContext.js';
 import type { Scope } from '../defs/index.js';
 
 export class NodeContext implements InjectionContext {

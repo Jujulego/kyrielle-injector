@@ -4,7 +4,7 @@ import { createScope$ } from './scope.js';
 
 const context = new NodeContext();
 
-export * from './index.js';
+export * from './common.js';
 
 /**
  * Creates an instance of token, using and storing in scope.
