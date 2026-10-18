@@ -10,7 +10,7 @@ export class NodeAsyncContext implements AsyncContext {
     return this._storage.getStore() ?? globalScope$();
   }
 
-  wrapInScope<A extends unknown[], T>(scope: Scope, fn: (...args: A) => T): (...args: A) => T {
+  wrapInScope<T>(scope: Scope, fn: () => T): () => T {
     return (...args) => this._storage.run(scope, () => fn(...args));
   }
 }

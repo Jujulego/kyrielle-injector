@@ -9,5 +9,5 @@ export interface AsyncContext {
   /**
    * Wraps the given function in the given scope. Any {@link getScope} call made within the function will return the given scope.
    */
-  wrapInScope<A extends unknown[], T>(scope: Scope, fn: (...args: A) => T): (...args: A) => T;
+  wrapInScope<T>(scope: Scope, fn: () => T): () => T;
 }
