@@ -1,5 +1,5 @@
-import { globalScope$ } from '@/src/common/global-scope.js';
-import { scope$ } from '@/src/common/scope.js';
+import { globalScope$ } from '@/src/global-scope.js';
+import { scope$ } from '@/src/scope.js';
 import type { SymbolToken } from '@/src/defs/index.js';
 import { asyncScope$ } from '@/src/node/async-scope.js';
 import { afterEach, describe, expect, it } from 'vitest';

@@ -1,8 +1,8 @@
 import { describe, expect, it, vi } from 'vitest';
 
-import { inject$ } from '@/src/common/inject.js';
-import { scope$ } from '@/src/common/scope.js';
-import { token$ } from '@/src/common/token.js';
+import { inject$ } from '@/src/inject.js';
+import { scope$ } from '@/src/scope.js';
+import { token$ } from '@/src/token.js';
 
 // Tests
 describe('inject$', () => {

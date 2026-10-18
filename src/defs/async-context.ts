@@ -7,7 +7,8 @@ export interface AsyncContext {
   getScope(): Scope;
 
   /**
-   * Wraps the given function in the given scope. Any {@link getScope} call made within the function will return the given scope.
+   * Runs the given function within the given scope.
+   * Any {@link getScope} call made within the function will return the given scope.
    */
-  wrapInScope<T>(scope: Scope, fn: () => T): () => T;
+  runInScope<T>(scope: Scope, fn: () => T): T;
 }

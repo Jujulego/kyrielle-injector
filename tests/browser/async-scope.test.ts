@@ -1,5 +1,5 @@
-import { asyncScope$ } from '@/src/browser/async-scope.js';
-import { globalScope$ } from '@/src/common/global-scope.js';
+import { asyncScope$ } from '@/src/internals/async-scope.js';
+import { globalScope$ } from '@/src/global-scope.js';
 import { afterEach, describe, expect, it } from 'vitest';
 
 // Setup
