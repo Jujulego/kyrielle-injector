@@ -1,8 +1,8 @@
 import { createInject$ } from './inject.js';
-import { BrowserAsyncContext } from './internals/browser-async-context.js';
+import { BrowserContext } from './internals/browser-context.js';
 import { createScope$ } from './scope.js';
 
-const context = new BrowserAsyncContext();
+const context = new BrowserContext();
 
 export * from './index.js';
 

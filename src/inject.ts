@@ -1,8 +1,8 @@
-import type { AsyncContext } from './defs/async-context.js';
+import type { InjectionContext } from './defs/injection-context.js';
 import type { Scope, Token } from './defs/index.js';
 
 /** @internal */
-export function createInject$(context: AsyncContext) {
+export function createInject$(context: InjectionContext) {
   return function inject$<T>(token: Token<T>, scope: Scope = context.getScope()): T {
     let value = scope.get(token);
 

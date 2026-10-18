@@ -1,8 +1,8 @@
-import type { AsyncContext } from './defs/async-context.js';
+import type { InjectionContext } from './defs/injection-context.js';
 import type { ChildScope, Scope, Token } from './defs/index.js';
 
 /** @internal */
-export function createScope$(context: AsyncContext) {
+export function createScope$(context: InjectionContext) {
   return function scope$(name: string, parent: Scope = context.getScope()): ChildScope {
     const map = new Map<Token, unknown>();
 

@@ -1,6 +1,6 @@
 import type { Scope } from './scope.js';
 
-export interface AsyncContext {
+export interface InjectionContext {
   /**
    * Returns the current scope.
    */

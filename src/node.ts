@@ -1,8 +1,8 @@
 import { createInject$ } from './inject.js';
-import { NodeAsyncContext } from './internals/node-async-context.js';
+import { NodeContext } from './internals/node-context.js';
 import { createScope$ } from './scope.js';
 
-const context = new NodeAsyncContext();
+const context = new NodeContext();
 
 export * from './index.js';
 

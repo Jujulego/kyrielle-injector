@@ -1,8 +1,8 @@
 import { globalScope$ } from '../global-scope.js';
-import type { AsyncContext } from '../defs/async-context.js';
+import type { InjectionContext } from '../defs/injection-context.js';
 import type { Scope } from '../defs/index.js';
 
-export class BrowserAsyncContext implements AsyncContext {
+export class BrowserContext implements InjectionContext {
   private _scope: Scope = globalScope$();
 
   getScope(): Scope {
