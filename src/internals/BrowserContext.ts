@@ -1,6 +1,7 @@
-import { globalScope$ } from '../global-scope.js';
-import type { InjectionContext } from '../defs/injection-context.js';
 import type { Scope } from '../defs/index.js';
+import type { InjectionContext } from '../defs/injection-context.js';
+import { globalScope$ } from '../global-scope.js';
+import { UnsupportedAsyncToken } from './UnsupportedAsyncToken.js';
 
 export class BrowserContext implements InjectionContext {
   private _scope: Scope = globalScope$();
@@ -17,7 +18,7 @@ export class BrowserContext implements InjectionContext {
       const result = fn();
 
       if (result instanceof Promise) {
-        throw new Error('Async tokens are not supported in browsers');
+        throw new UnsupportedAsyncToken('Async tokens are not supported in browsers');
       }
 
       return result;

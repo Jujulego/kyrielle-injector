@@ -1,5 +1,5 @@
 import { createInject$ } from './inject.js';
-import { BrowserContext } from './internals/browser-context.js';
+import { BrowserContext } from './internals/BrowserContext.js';
 import { createScope$ } from './scope.js';
 
 const context = new BrowserContext();

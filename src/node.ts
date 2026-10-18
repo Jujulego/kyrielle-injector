@@ -1,5 +1,5 @@
 import { createInject$ } from './inject.js';
-import { NodeContext } from './internals/node-context.js';
+import { NodeContext } from './internals/NodeContext.js';
 import { createScope$ } from './scope.js';
 
 const context = new NodeContext();

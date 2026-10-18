@@ -3,7 +3,6 @@ import { scope$ as nodeScope$, inject$ as nodeInject$ } from '@/src/node.js';
 import { describe, expect, it, vi } from 'vitest';
 import { token$ } from '@/src/token.js';
 
-// Tests
 describe.each([
   { context: 'browser', scope$: browserScope$, inject$: browserInject$ },
   { context: 'node', scope$: nodeScope$, inject$: nodeInject$ }
