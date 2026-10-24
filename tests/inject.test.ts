@@ -1,11 +1,12 @@
+import { scope$ as browserScope$, inject$ as browserInject$ } from '@/src/browser.js';
+import { scope$ as nodeScope$, inject$ as nodeInject$ } from '@/src/node.js';
 import { describe, expect, it, vi } from 'vitest';
-
-import { inject$ } from '@/src/inject.js';
-import { scope$ } from '@/src/scope.js';
 import { token$ } from '@/src/token.js';
 
-// Tests
-describe('inject$', () => {
+describe.each([
+  { context: 'browser', scope$: browserScope$, inject$: browserInject$ },
+  { context: 'node', scope$: nodeScope$, inject$: nodeInject$ }
+])('inject$ ($context)', ({ scope$, inject$ }) => {
   it('should create an instance of token, using given callback', () => {
     const spy = vi.fn(() => 42);
 

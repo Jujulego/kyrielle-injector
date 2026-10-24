@@ -1,23 +1,21 @@
+import type { InjectionContext } from './internals/InjectionContext.js';
 import type { Scope, Token } from './defs/index.js';
-import { globalScope$ } from './global-scope.js';
 
-/**
- * Creates an instance of token, using & storing in scope.
- *
- * @version 1.0.0
- */
-export function inject$<T>(token: Token<T>, scope: Scope = globalScope$()): T {
-  let value = scope.get(token);
+/** @internal */
+export function createInject$(context: InjectionContext) {
+  return function inject$<T>(token: Token<T>, scope: Scope = context.getScope()): T {
+    let value = scope.get(token);
 
-  if (value === undefined) {
-    if (typeof token === 'function') {
-      value = new token();
-    } else {
-      value = token.inject(scope);
+    if (value === undefined) {
+      if (typeof token === 'function') {
+        value = context.runInScope(scope, () => new token());
+      } else {
+        value = context.runInScope(scope, () => token.inject(scope));
+      }
+
+      scope.set(token, value);
     }
 
-    scope.set(token, value);
-  }
-
-  return value;
+    return value;
+  };
 }

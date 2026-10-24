@@ -4,6 +4,8 @@ import type { Token } from './token.js';
  * Root scope, map matching tokens to instances
  */
 export interface RootScope {
+  readonly name: string;
+
   /**
    * Return value stored at given token
    */
@@ -24,7 +26,6 @@ export interface RootScope {
  * Child scope, map matching tokens to instances, with inheritance.
  */
 export interface ChildScope extends RootScope {
-  readonly name: string;
   readonly parentScope: Scope;
 }
 

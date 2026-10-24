@@ -1,8 +1,8 @@
-import { afterEach, describe, expect, it } from 'vitest';
-
+import { scope$ as browserScope$ } from '@/src/browser.js';
 import type { SymbolToken } from '@/src/defs/token.js';
 import { globalScope$ } from '@/src/global-scope.js';
-import { scope$ } from '@/src/scope.js';
+import { scope$ as nodeScope$ } from '@/src/node.js';
+import { afterEach, describe, expect, it } from 'vitest';
 
 // Setup
 afterEach(() => {
@@ -10,7 +10,10 @@ afterEach(() => {
 });
 
 // Tests
-describe('scope$', () => {
+describe.each([
+  { context: 'browser', scope$: browserScope$ },
+  { context: 'node', scope$: nodeScope$ }
+])('scope$ ($context)', ({ scope$ }) => {
   it('should create a new scope', () => {
     const parent = scope$('parent-scope');
     const scope = scope$('test-scope', parent);
@@ -38,7 +41,7 @@ describe('scope$', () => {
     expect(scope.get(token)).toBe(42);
   });
 
-  it('should return value stored global scope', () => {
+  it('should return value stored in global scope', () => {
     const token = Symbol('test-token') as SymbolToken<number>;
     const scope = scope$('test-scope');
 
