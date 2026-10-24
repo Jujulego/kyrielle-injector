@@ -4,7 +4,7 @@ import type { ChildScope, Scope, Token } from './defs/index.js';
 /** @internal */
 export function createScope$(context: InjectionContext) {
   return function scope$(name: string, parent: Scope = context.getScope()): ChildScope {
-    const map = new Map<Token, unknown>();
+    let map = new WeakMap<Token, unknown>();
 
     return {
       name,
@@ -19,7 +19,9 @@ export function createScope$(context: InjectionContext) {
         return value;
       },
       set: (token, value) => map.set(token, value),
-      clear: () => map.clear(),
+      clear: () => {
+        map = new WeakMap();
+      },
     };
   };
 }

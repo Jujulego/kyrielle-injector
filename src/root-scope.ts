@@ -6,12 +6,14 @@ import type { RootScope, Token } from './defs/index.js';
  * @version 2.0.0
  */
 export function rootScope$(name: string): RootScope {
-  const map = new Map();
+  let map = new WeakMap<Token, unknown>();
 
   return {
     name,
     get: <T>(token: Token<T>) => map.get(token) as T,
     set: (token, value) => map.set(token, value),
-    clear: () => map.clear(),
+    clear: () => {
+      map = new WeakMap();
+    },
   };
 }

@@ -41,7 +41,7 @@ describe.each([
     expect(scope.get(token)).toBe(42);
   });
 
-  it('should return value stored global scope', () => {
+  it('should return value stored in global scope', () => {
     const token = Symbol('test-token') as SymbolToken<number>;
     const scope = scope$('test-scope');
 
