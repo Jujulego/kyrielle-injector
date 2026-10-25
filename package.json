@@ -13,7 +13,7 @@
     "dependency injection",
     "di"
   ],
-  "sideEffects": false,
+  "sideEffects": ["./dist/vitest.js"],
   "files": [
     "./dist"
   ],
