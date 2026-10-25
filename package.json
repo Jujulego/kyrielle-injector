@@ -72,5 +72,10 @@
   "peerDependencies": {
     "vitest": ">5.0.0"
   },
+  "peerDependenciesMeta": {
+    "vitest": {
+      "optional": true
+    }
+  },
   "packageManager": "yarn@4.18.1"
 }
